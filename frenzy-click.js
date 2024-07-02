@@ -26,7 +26,8 @@ javascript:(function() {
 				"Juicy profits",
 				"Click frenzy",
 				"Luxuriant harvest",
-				"Ore vein"
+				"Ore vein",
+				"Congregation"
 			]
 			this.hadBuffs = false;
 			this.hadCookieStorm = false;
@@ -164,7 +165,7 @@ javascript:(function() {
 				Game.shimmers.forEach((shimmer) => shimmer.pop())
 			}
 			
-			if (Game.hasBuff('Ore vein') || Game.hasBuff('Click frenzy') || Game.hasBuff('Luxuriant harvest') || Game.hasBuff('Juicy profits') || Game.hasBuff('Manabloom') || Game.hasBuff('Frenzy') || Game.hasBuff('Dragonflight') || Game.hasBuff('Elder frenzy') || Game.hasBuff('Cursed finger')) {
+			if (Game.hasBuff('Congregation') || Game.hasBuff('Ore vein') || Game.hasBuff('Click frenzy') || Game.hasBuff('Luxuriant harvest') || Game.hasBuff('Juicy profits') || Game.hasBuff('Manabloom') || Game.hasBuff('Frenzy') || Game.hasBuff('Dragonflight') || Game.hasBuff('Elder frenzy') || Game.hasBuff('Cursed finger')) {
 				Game.ClickCookie();
 			}
 			
