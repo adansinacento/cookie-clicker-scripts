@@ -22,7 +22,8 @@ javascript:(function() {
 				"Cursed finger",
 				"Cookie storm",
 				"Dragonflight",
-				"Manabloom"
+				"Manabloom",
+				"Juicy profits"
 			]
 			this.hadBuffs = false;
 			this.hadCookieStorm = false;
