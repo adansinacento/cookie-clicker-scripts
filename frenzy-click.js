@@ -21,7 +21,8 @@ javascript:(function() {
 				"Click frenzy",
 				"Cursed finger",
 				"Cookie storm",
-				"Dragonflight"
+				"Dragonflight",
+				"Manabloom"
 			]
 			this.hadBuffs = false;
 			this.hadCookieStorm = false;
