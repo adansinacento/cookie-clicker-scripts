@@ -23,7 +23,8 @@ javascript:(function() {
 				"Cookie storm",
 				"Dragonflight",
 				"Manabloom",
-				"Juicy profits"
+				"Juicy profits",
+				"Luxuriant harvest"
 			]
 			this.hadBuffs = false;
 			this.hadCookieStorm = false;
@@ -161,7 +162,7 @@ javascript:(function() {
 				Game.shimmers.forEach((shimmer) => shimmer.pop())
 			}
 			
-			if (Game.hasBuff('Juicy profits') || Game.hasBuff('Manabloom') || Game.hasBuff('Frenzy') || Game.hasBuff('Dragonflight') || Game.hasBuff('Elder frenzy') || Game.hasBuff('Cursed finger')) {
+			if (Game.hasBuff('Luxuriant harvest') || Game.hasBuff('Juicy profits') || Game.hasBuff('Manabloom') || Game.hasBuff('Frenzy') || Game.hasBuff('Dragonflight') || Game.hasBuff('Elder frenzy') || Game.hasBuff('Cursed finger')) {
 				Game.ClickCookie();
 			}
 			
