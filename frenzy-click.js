@@ -24,6 +24,7 @@ javascript:(function() {
 				"Dragonflight",
 				"Manabloom",
 				"Juicy profits",
+				"Click frenzy",
 				"Luxuriant harvest"
 			]
 			this.hadBuffs = false;
@@ -162,7 +163,7 @@ javascript:(function() {
 				Game.shimmers.forEach((shimmer) => shimmer.pop())
 			}
 			
-			if (Game.hasBuff('Luxuriant harvest') || Game.hasBuff('Juicy profits') || Game.hasBuff('Manabloom') || Game.hasBuff('Frenzy') || Game.hasBuff('Dragonflight') || Game.hasBuff('Elder frenzy') || Game.hasBuff('Cursed finger')) {
+			if (Game.hasBuff('Click frenzy') || Game.hasBuff('Luxuriant harvest') || Game.hasBuff('Juicy profits') || Game.hasBuff('Manabloom') || Game.hasBuff('Frenzy') || Game.hasBuff('Dragonflight') || Game.hasBuff('Elder frenzy') || Game.hasBuff('Cursed finger')) {
 				Game.ClickCookie();
 			}
 			
