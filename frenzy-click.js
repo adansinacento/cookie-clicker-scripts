@@ -197,7 +197,7 @@ javascript: (function () {
     resume() {
       this.mainTicker = setInterval(this.tick, this.Speed);
       //auto click golden coockies
-      this.autoGolden = setInterval(this.autoGolden, 1000);
+      this.autoGolden = setInterval(this.autoclickGolden, 1000);
     }
 
     autoclickGolden() {
