@@ -201,12 +201,12 @@ javascript: (function () {
     }
 
     autoclickGolden() {
+      console.log("info");
       for (var h in Game.shimmers) {
-        console.log(h);
-        console.log(Game.shimmers[h]);
-        // if (Game.shimmers[h].type == "golden") {
-        //   Game.shimmers[h].pop();
-        // }
+        if (Game.shimmers[h].type === "golden") {
+          console.log("golden cookie spotted");
+          Game.shimmers[h].pop();
+        }
       }
     }
 
