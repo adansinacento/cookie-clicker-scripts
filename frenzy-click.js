@@ -149,7 +149,6 @@ javascript: (function () {
       if (!self.hasAnyClickBuffs()) {
         if (self.hadBuffs) {
           self.hadBuffs = false;
-          self.debug("Buff(s) off.");
           if (self.hadCookieStorm) {
             self.hadCookieStorm = false;
             self.debug("Ensuring Cookie Storm leftovers are cleaned up.");
@@ -160,10 +159,6 @@ javascript: (function () {
         return;
       }
 
-      if (!self.hadBuffs) {
-        self.debug("Buff(s) on.");
-      }
-
       if (Game.hasBuff("Cookie storm")) {
         if (!self.hadCookieStorm) {
           self.hadCookieStorm = true;
@@ -171,7 +166,7 @@ javascript: (function () {
         Game.shimmers.forEach((shimmer) => shimmer.pop());
       }
 
-      if (self.hasAnyClickBuffs()) {
+      if (self.hasAnyClickBuffs() || Game.hasBuff("Clot")) {
         Game.ClickCookie();
       }
 
